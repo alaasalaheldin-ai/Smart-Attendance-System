@@ -1,0 +1,15 @@
+.ui-select { border-color: var(--border); border-radius: var(--radius); }
+.ui-select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 .2rem var(--focus-ring);
+}
+
+/* السهم على الشمال لأن الواجهة RTL */
+[dir='rtl'] .ui-select {
+  background-position: left .75rem center;
+  padding: .375rem .75rem .375rem 2.25rem;
+}
+[dir='rtl'] .ui-select.is-invalid {
+  background-position: left .75rem center, center left 2.25rem;
+  padding-left: 4.125rem;
+}

@@ -9,6 +9,7 @@ import Dashboard from './Pages/Dashboard/Dashboard'
 import Session from './Pages/Session/Session'
 import Sessions from './Pages/Sessions/Sessions'
 import SessionDetails from './Pages/Sessions/SessionDetails'
+import Students from './Pages/Students/Students'
 
 
 const soon = (title) => <PageTitle title={title} subtitle="" />
@@ -31,7 +32,7 @@ export default function App() {
         <Route path="/attendance" element={soon('أخد الحضور')} />
         <Route path="/my-reports" element={soon('تقارير موادي')} />
         <Route path="/courses" element={soon('المواد وطلابها')} />
-        <Route path="/students" element={soon('الطلاب')} />
+        <Route path="/students" element={<Students />} />
         <Route path="/cards" element={soon('الكارنيهات')} />
         <Route path="/schedule" element={soon('الجدول والإجازات')} />
         <Route path="/settings" element={soon('الإعدادات')} />
