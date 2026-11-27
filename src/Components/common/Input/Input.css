@@ -1,0 +1,5 @@
+.ui-input { border-color: var(--border); border-radius: var(--radius); }
+.ui-input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 .2rem var(--focus-ring);
+}

@@ -1,0 +1,13 @@
+.ui-table {
+  margin-top: var(--space-3);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.ui-table .table {
+  --bs-table-color: var(--navy);
+  text-align: center;
+  white-space: nowrap;
+}
+.ui-table thead th { --bs-table-bg: var(--gold-soft); font-weight: 700; }
+.ui-table__actions { display: flex; justify-content: center; gap: var(--space-2); }

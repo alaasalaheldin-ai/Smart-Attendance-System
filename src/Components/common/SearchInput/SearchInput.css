@@ -1,0 +1,32 @@
+.ui-search { position: relative; }
+
+.ui-search__input {
+  border-color: var(--border);
+  border-radius: var(--radius);
+  padding-inline: 2.5rem;
+}
+.ui-search__input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 .2rem var(--focus-ring);
+}
+/* عندنا زرار مسح خاص */
+.ui-search__input::-webkit-search-cancel-button { display: none; }
+
+.ui-search__icon,
+.ui-search__clear {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ui-search__icon {
+  inset-inline-start: .9rem;
+  color: var(--pending);
+  pointer-events: none;
+}
+.ui-search__clear {
+  inset-inline-end: .5rem;
+  border: 0;
+  background: transparent;
+  color: var(--pending);
+  padding: .25rem .4rem;
+}

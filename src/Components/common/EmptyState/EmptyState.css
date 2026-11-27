@@ -1,0 +1,4 @@
+.ui-empty { text-align: center; padding: var(--space-5) var(--space-3); }
+.ui-empty__icon { font-size: 3rem; color: var(--gold); }
+.ui-empty__title { font-size: 1.25rem; font-weight: 700; margin: var(--space-2) 0; }
+.ui-empty__description { color: var(--pending); }

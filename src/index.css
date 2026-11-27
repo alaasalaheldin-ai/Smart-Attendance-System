@@ -13,6 +13,21 @@
   --pending: #5a6272;  --pending-bg: #ebedf2;
 
   --sidebar-w: 250px;
+
+    /* For shared components */
+  --navy-hover: #0e1d38;
+  --gold-soft-hover: #efdcb4;
+  --absent-hover: #8f1e18;
+  --late-text: #8a5607;
+  --info: #1d57a8;     --info-bg: #e1edfd;
+  --focus-ring: rgba(200, 150, 46, .35);
+  --backdrop: rgba(20, 40, 75, .55);
+  --radius: 8px;
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 3rem;
 }
 
 body {
