@@ -1,0 +1,5 @@
+.ui-field { margin-bottom: var(--space-3); }
+.ui-field__label { font-weight: 700; margin-bottom: var(--space-1); }
+.ui-field__required { color: var(--absent); }
+.ui-field__error { color: var(--absent); font-size: .85rem; margin-top: var(--space-1); }
+.ui-field__help { color: var(--pending); font-size: .85rem; margin-top: var(--space-1); }

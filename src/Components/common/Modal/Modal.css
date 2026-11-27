@@ -1,0 +1,43 @@
+.ui-modal {
+  width: calc(100% - 2rem);
+  padding: 0;
+  max-height: calc(100vh - 2rem);
+  overflow: hidden;
+  border: 0;
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--navy);
+}
+/* الـ scroll جوه الـ body بس، فالعنوان والأزرار يفضلوا ظاهرين */
+.ui-modal__content {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 2rem);
+}
+.ui-modal::backdrop { background: var(--backdrop); }
+.ui-modal--small  { max-width: 400px; }
+.ui-modal--medium { max-width: 560px; }
+.ui-modal--large  { max-width: 840px; }
+
+.ui-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+}
+.ui-modal__title { font-size: 1.25rem; font-weight: 700; margin: 0; }
+.ui-modal__header .btn-close { margin: 0; }
+.ui-modal__body { padding: var(--space-4); overflow-y: auto; min-height: 0; }
+.ui-modal__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-top: 1px solid var(--border);
+}
+
+/* نمنع scroll الصفحة والنافذة مفتوحة */
+body:has(.ui-modal[open]) { overflow: hidden; }
