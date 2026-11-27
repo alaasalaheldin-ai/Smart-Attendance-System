@@ -18,7 +18,7 @@ export default function Header({ user = null, backTo = null, withMenu = false })
         <span className="brand-icon"><i className="bi bi-qr-code" /></span>
         <div>
           <div className="brand-title">نظام الحضور والغياب</div>
-          <div className="brand-sub d-none d-sm-block">برنامج الدكتور</div>
+          <div className="brand-sub d-none d-sm-block">جامعة الزقازيق - كلية العلوم</div>
         </div>
       </div>
 
